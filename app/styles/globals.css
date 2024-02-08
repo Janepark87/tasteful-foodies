@@ -15,6 +15,10 @@ main {
 	padding: 0 1.5rem;
 }
 
+ul {
+	list-style: none;
+}
+
 .not-found,
 .error {
 	margin-top: 5rem;
