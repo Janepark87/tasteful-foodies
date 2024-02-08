@@ -11,21 +11,6 @@ body {
 	background: radial-gradient(#282c34, #282c34);
 }
 
-.header-background {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 320px;
-	z-index: -1;
-}
-
-svg {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
 .not-found,
 .error {
 	margin-top: 5rem;
