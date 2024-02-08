@@ -1,0 +1,67 @@
+.hero-community {
+	width: 100%;
+	max-width: 75rem;
+	margin: 2rem auto 5rem;
+	color: #ddd6cb;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.hero-community h1 {
+	margin-bottom: 1rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.highlight {
+	background: linear-gradient(90deg, #f9572a, #ff8a05);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.section {
+	max-width: 38rem;
+	margin: 0 auto;
+}
+
+.section h2 {
+	color: #ddd6cb;
+	text-align: center;
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.perks {
+	list-style: none;
+	margin-top: 3rem;
+}
+
+.perks li {
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+	margin-top: 1.5rem;
+}
+
+.perks img {
+	width: 100%;
+	max-width: 12rem;
+	max-height: 12rem;
+	object-fit: contain;
+}
+
+.perks p {
+	color: #ddd6cb;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+	.perks li {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		gap: 2rem;
+		margin-top: 1.5rem;
+	}
+}
