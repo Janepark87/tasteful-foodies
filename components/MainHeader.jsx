@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './styles/MainHeader.module.css';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/icons/logo.png';
 import MainHeaderBg from './MainHeaderBg';
 
 export default function MainHeader() {

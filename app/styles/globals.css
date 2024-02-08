@@ -11,6 +11,10 @@ body {
 	background: radial-gradient(#282c34, #282c34);
 }
 
+main {
+	padding: 0 1.5rem;
+}
+
 .not-found,
 .error {
 	margin-top: 5rem;
