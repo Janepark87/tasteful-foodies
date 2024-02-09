@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import styles from './styles/page.module.css';
 import MealsGrid from '@/components/meals/MealsGrid';
+import { getMeals } from '@/lib/apiMeals';
 
-export default function MealsPage() {
+export default async function MealsPage() {
+	const meals = await getMeals();
+
 	return (
 		<>
 			<section className={styles['hero-meals']}>
@@ -18,7 +21,7 @@ export default function MealsPage() {
 			</section>
 
 			<section>
-				<MealsGrid meals={[]} />
+				<MealsGrid meals={meals} />
 			</section>
 		</>
 	);

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './styles/MealGrid.module.css';
+import styles from './styles/MealItem.module.css';
 import Image from 'next/image';
 
 export default function MealItem({ title, slug, image, summary, creator }) {
