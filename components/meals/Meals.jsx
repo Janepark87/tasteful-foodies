@@ -1,7 +1,10 @@
 import MealItem from './MealItem';
-import styles from './styles/MealGrid.module.css';
+import styles from './styles/Meals.module.css';
+import { getMeals } from '@/lib/apiMeals';
 
-export default function MealsGrid({ meals }) {
+export default async function Meals() {
+	const meals = await getMeals();
+
 	return (
 		<ul className={styles.meals}>
 			{meals.map((meal) => (
