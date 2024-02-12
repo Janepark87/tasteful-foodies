@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 import styles from './styles/page.module.css';
 import { getMeal } from '@/lib/apiMeals';
 
 export default function MealsDetailPage({ params: { slug } }) {
-	const { title, image, summary, creator, creator_email, instructions } = getMeal(slug);
+	const meal = getMeal(slug);
+
+	if (!meal) notFound();
+
+	const { title, image, summary, creator, creator_email, instructions } = meal;
 	const HTML_INSTRUCTIONS = instructions.replace(/\n/g, '<br />');
 
 	return (
