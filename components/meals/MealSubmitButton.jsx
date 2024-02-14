@@ -10,7 +10,6 @@ export default function MealSubmitButton() {
 			<button type="submit" disabled={pending}>
 				{pending ? 'Submitting' : 'Share Meal'}
 			</button>
-			;
 		</div>
 	);
 }

@@ -68,3 +68,9 @@
 .row div {
 	width: 100%;
 }
+
+.error {
+	display: inline-block;
+	margin-top: 0.25rem;
+	color: tomato;
+}
