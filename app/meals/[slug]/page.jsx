@@ -4,6 +4,17 @@ import { notFound } from 'next/navigation';
 import styles from './styles/page.module.css';
 import { getMeal } from '@/lib/apiMeals';
 
+export async function generateMetadata({ params }) {
+	const meal = getMeal(params.slug);
+
+	if (!meal) notFound();
+
+	return {
+		title: meal.title,
+		description: meal.summary,
+	};
+}
+
 export default function MealsDetailPage({ params: { slug } }) {
 	const meal = getMeal(slug);
 

@@ -4,6 +4,11 @@ import styles from './styles/page.module.css';
 import Meals from '@/components/meals/Meals';
 import Loader from '@/components/loader';
 
+export const metadata = {
+	title: 'All Meals',
+	description: 'Browse the delicious meals shared by our vibrant community.',
+};
+
 export default function MealsPage() {
 	return (
 		<>
